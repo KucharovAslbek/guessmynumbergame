@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Press Start 2P', sans-serif;
+}
+body{
+    color: #eeeeee;
+    background-color: #222222;
+    padding: 40px;
+}
+header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+}
+.info {
+    text-align: center;
+}
+.game-title {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+.number {
+    display: block;
+    position: relative;
+}
+.guessed-number{
+    display: inline-block;
+    background-color: #eeeeee;
+    padding: 35px;
+    font-size: 30px;
+    color: #222222;
+}
+.guessed-number::before{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background-color: #eeeeee;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.interaction {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.answer-field {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.number-input {
+    width: 200px;
+    height: 80px;
+    background-color: transparent;
+    border: 4px solid #eeeeee;
+    margin-bottom: 20px;
+    outline: none;
+    text-align: center;
+    font-size: 30px;
+    color: #eeeeee;
+}
+.statistic {
+}
+.message {
+    margin-bottom: 60px;
+}
+.score {
+    margin-bottom: 20px;
+}
